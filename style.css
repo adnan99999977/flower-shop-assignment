@@ -181,9 +181,48 @@ margin-bottom: 100px;
     box-shadow: 1px 1px 8px 2px rgba(179, 176, 176, 0.397);
 
 }
+/* form section */
+.form_section{
+    height: 300px;
+    background-image: url("flower Asset/Rectangle\ 9.png");
+    margin-bottom: 100px;
+    text-align: center;
+    padding-top: 80px;
+}
+.form_section h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
 
+.form_section input{
+    width: 400px;
+    height: 45px;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: none;
+    margin-top: 10px;
+}
 
+/* footer */
+footer{
+    max-width: 100%;
+    height: 300px;
+    background-color: black;
+    text-align: center;
+}
+footer h1{
+ font-size: 2rem;
+ color: aliceblue;
+ padding-top: 80px;
+ margin-bottom: 10px;
+}
 
+.sp_para{
+  color: rgba(196, 193, 193, 0.4);
+  font-size: 0.8rem;
+  padding-top: 20px;
+}
 /* media screen section for mobile */
  /* banner section */
 
@@ -219,5 +258,20 @@ margin-bottom: 100px;
 .flower_section{
     grid-template-columns: repeat(2,1fr);
 }
+.form_section{
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+.form_section h2{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.form_section input{
+    width: 200px;
+}
+footer h1{
+    font-size: 1.5rem;
+}
+
 }
 
