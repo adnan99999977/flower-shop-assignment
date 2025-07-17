@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-regular-font {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* primary section */
+ .main_width{
+    max-width: 75%;
+    margin: 0 auto;
+ }
+ .priamry_para{
+    font-weight: 1rem;
+    color: rgba(58, 57, 57, 0.6);
+    font-weight: 600;
+ }
+ .primary_btn{
+    width: 125px;
+    height: 45px;
+    background-color: #E55473;
+    color: white;
+    border-radius: 8px;
+    transition: .4s;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    
+ }
+ .primary_btn:hover{
+    background-color: white;
+    color: #E55473;
+    border: 1px solid #E55473;
+ }
+ .flower_name {
+    font-size: 1rem;
+    color:#272727;
+    font-weight: 800;
+    width: 125px;
+    margin-left: 130px;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+
+ }
+ .tob_name{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #272727;
+    width: 140px;
+    border-bottom: 2px solid black;
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    bottom:-30px;
+ }
+
+/* banner section */
+header{
+    background-color:rgba(229, 84, 115, 0.1) ;
+}
+.banner_main{
+    display: flex;
+    justify-content: space-between;
+}
+#banner_heading {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.banner_info{
+    margin-top: 90px;
+}
+.banner_img img{
+    width: 100%;
+    margin-top: 30px;
+}
+.banner_info p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* feature section */
+
+.featured_info{
+    text-align: center;
+}
+.featured_info h2{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.fetured_item{
+    width: 230px;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.fetured_item img{
+  width: 50%;
+  padding-top: 50px;
+  margin-left: 60px;
+}
+.featured_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+.tob_bg_color_1{
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.tob_bg_color_3{
+    background-color: rgba(167, 33, 98, 0.15);
+}
+
+ .tob_bg_color_2{
+    background-color: rgba(5, 151, 160, 0.15)
+ }
+/* sticker section */
+.sticker_section{
+    background-color: rgba(39, 39, 39, 0.05);
+    border-radius: 9px;
+    display: flex;
+    padding: 30px 30px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.card img{
+  width: 50px;
+  height: 50px;
+   margin: 0 70px;
+}
+/* hot deal section */
+.hot_deal_section{
+background-color: rgba(229, 84, 115, 0.05);
+margin-bottom: 100px;
+}
+.hot_deal_main{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+ justify-content: space-between;
+ padding-bottom: 50px;
+}
+.hot_info{
+    padding-top: 170px;
+}
+.hot_info h2{
+    font-weight: 800;
+    margin-bottom: 20px;   
+}
+.hot_img{
+    padding-top: 70px;
+}
+/* instagaram section */
+.instagram_section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.instagram_section h2{
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.flower_section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+
+}
+.flower_section img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 2px rgba(179, 176, 176, 0.397);
+
+}
+
+
+
+/* media screen section for mobile */
+ /* banner section */
+
+ @media screen and ( max-width:567px) {
+   
+    .banner_main{ 
+        flex-direction: column;
+        margin: 0px;
+ }
+   .main_width{
+    width: 300px;
+    margin: 0 auto;
+ }
+ .featured_section{
+    flex-direction: column;
+    margin-left: 30px;
+    
+}
+.fetured_item img{
+    padding-bottom: 20px;
+}
+.sticker_section{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.card {
+   margin: 0 auto;
+}
+.hot_deal_main{
+    flex-direction: column-reverse;
+}
+.flower_section{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
